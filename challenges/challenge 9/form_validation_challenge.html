@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form With Validation</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <!-- uncertain of how to make form display specific error messages upon failed validation -->
+    <form>
+      <p>User id:
+        <input type="text" name="id" max="12" min="5" required ></p>
+
+      <p>Password:
+        <input type="password" name="" max="12" min="7" required></p>
+
+      <p>Name:
+        <input type="text" name="name" pattern="[A-Za-z]" required></p>
+
+      <p>Adress:
+        <input type="text" name="address"></p>
+
+      <p>Country:
+        <select name="country" required>
+            <option value="sa">South Africa</option>
+            <option value="peru">Peru</option>
+            <option value="scotland">Scotland</option>
+            <option value="mexico">Mexico</option>
+        </select></p>
+
+      <p>ZIP Code:
+        <input type="number" name="zip" required></p>
+
+      <p>Email:
+        <input type="email" name="email" required"></p>
+
+      <p>Sex:
+        <input type="radio" name="sex" value="female" required> Female
+        <input type="radio" name="sex" value="male"> Male</p>
+
+      <p>Language:
+        <input type="checkbox" name="eng">English
+        <input type="checkbox" name="eng">Non-English</p>
+        <!-- uncertain how to make it required to select one box -->
+
+      <p>About:<br>
+        <textarea name="name" rows="8" cols="80"></textarea></p>
+
+      <p><input type="submit" name="submit" value="Submit"></p>
+    </form>
+  </body>
+</html>

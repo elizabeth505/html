@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Coffee Questionnare</title>
+  </head>
+  <body>
+
+    <h1>Please enter your details, then answer the questions below</h1>
+    <hr>
+    <hr>
+
+    <h3>Details</h3>
+    <hr>
+    <form>
+
+      <p>Full Name:
+      <input type="text" name="name"></p>
+      <p>Email:
+      <input type="email" name="email"></p>
+      <p>Phone Number:
+      <input type="number" name="number"></p>
+      <p>Gender:
+      <input type="radio" name="gender" value="female"> Female
+      <input type="radio" name="gender" value="male"> Male</p>
+      <p>Password:
+      <input type="password" name="password"></p>
+
+
+    <h3>Survey Questions</h3>
+    <hr>
+
+        <p>How many times do you visit coffee shops per week?
+         <select>
+           <option value="0">0</option>
+           <option value="1">1-3</option>
+           <option value="3">3-5</option>
+           <option value="5">5+</option>
+         </select></p>
+
+         <p>What is your favourite coffee shop? Please provide city of shop too.
+           <input type="text" name="shop"></p>
+
+          <p>What do you typically order to drink?
+            <select>
+              <option value="cap">Cappuccino</option>
+              <option value="choc">Hot Chocolate</option>
+              <option value="tea">Tea</option>
+              <option value="latte">Latte</option>
+              <option value="ice">Iced Drink</option>
+              <option value="milkshake">Milkshake</option>
+              <option value="juice">Fresh Juice</option>
+            </select></p>
+
+          <p>Do you prefer large, national chain coffee shops or small, privately owned coffee shops?
+            <input type="radio" name="large"> Smaller, private
+            <input type="radio" name="large"> Larger, national</p>
+
+          <p>Comments:<br>
+          <textarea name="msg" rows="8" cols="40"></textarea></p>
+
+          <p><input type="checkbox" name="news" value="news"> Sign me up for exciting news in the coffee world!</p>
+
+          <p><input type="submit" name="submit" value="submit"></p>
+
+          <p><input type="reset" name="reset" value="reset"></p>
+    </form>
+
+  </body>
+</html>
