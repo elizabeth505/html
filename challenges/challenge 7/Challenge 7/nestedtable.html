@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nested Table</title>
+</head>
+
+<body>       
+    
+    <!-- manipulated table -->
+    <table width="300" height="300" border="1" >
+        <tbody>
+            <tr>
+                <td colspan="1">
+                    1
+                </td>
+                <td colspan="3">
+                    2
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="3" colspan="1">
+                    3
+                </td>
+                <td bgcolor="orange">
+                    4
+                </td>
+                <td bgcolor="orange">
+                    5
+                </td>
+                <td bgcolor="yellow" rowspan="2">
+                    6
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="orange">
+                    7
+                </td>
+                <td bgcolor="orange">
+                    8
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="yellow" colspan="2">
+                    9
+                </td>
+                <td bgcolor="yellow" colspan="1">
+                    10
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <!-- nested table -->
+    <table border="1" width="" height="">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>
+                <table border="1" width="" height="">
+                    <tr>
+                        <td>
+                            <table border="1" width="" height="">
+                                <tr>
+                                    <td>4</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>8</td>
+                                </tr>
+                            </table>
+                            
+                        </td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
