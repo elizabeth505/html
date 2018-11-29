@@ -1,36 +1,79 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Nested Tables Challenge</title>
+<html lang="en">
 
-        <!-- <style>
+<head>
+    <title>Nested Table</title>
+</head>
 
-            table, th, td {
-                border:5px;
-            }
+<body>
 
-        </style> -->
-<!-- for unknow reasons, applying internel css doesn't work on table -->
-    </head>
-    <body>
+    <table width="300" height="300" border="1" >
+        <!-- width and height sets width and height for entire table
+        border sets border thickness -->
+        <tbody>
+            <tr>
+                <td colspan="1">1</td>
+                <td colspan="3">2</td>
+                <!-- colspan sets cell to span  multiple columns, number of columns are specified -->
+            </tr>
+            <tr>
+                <td rowspan="3" colspan="1">3</td>
+                <!-- rowspan sets cells to span multiple rows, number of rows are specified -->
+                <td bgcolor="orange">4</td>
+                <!-- this specific cell is has an orange background color -->
+                <td bgcolor="orange">5</td>
+                <!-- this specific cell is has an orange background color -->
+                <td bgcolor="yellow" rowspan="2">6</td>
+                <!-- this specific cell is has a yellow background color -->
+            </tr>
+            <tr>
+                <td bgcolor="orange">7</td>
+                <td bgcolor="orange">8</td>
+            </tr>
+            <tr>
+                <td bgcolor="yellow" colspan="2">9</td>
+                <td bgcolor="yellow" colspan="1">10</td>
+            </tr>
+        </tbody>
+    </table>
 
-        Nested Table Challenge
 
-        <table border="5px" color="pink">
-            <thead>
-                <th>1</th>
-                <th>2</th>
-            </thead>
+    <table border="1" width="300" height="300">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <!-- colspan doesnt work as before because there is a different number of columns -->
+        </tr>
+        <tr>
+            <td>3</td>
+            <td align="center">
+                <table border="1" width="" height="">
+                    <!-- altering nested tables dimensions squishes outer table in an undesirable manner -->
+                    <tr>
+                        <td>
+                            <table border="1" width="" height="">
+                                <tr>
+                                    <td bgcolor="orange">4</td>
+                                    <td bgcolor="orange">5</td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="orange">7</td>
+                                    <td bgcolor="orange">8</td>
+                                </tr>
+                            </table>
 
-            <tbody>
-                <tr>
-                    <td>?</td>
-                </tr>
-                <tr>
-                    <td>?</td>
-                </tr>
-            </tbody>
-        </table>
-    </body>
+                        </td>
+                        <td bgcolor="yellow">6</td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="yellow">9</td>
+                        <td bgcolor="yellow">10</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
 </html>
