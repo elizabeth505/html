@@ -11,20 +11,32 @@
     <hr>
 
     <h3>Details</h3>
+    <!-- Gathering basic info on user using an html form -->
     <hr>
     <form>
 
       <p>Full Name:
       <input type="text" name="name"></p>
+      <!-- specifies the input type to be specifically text
+      for later php use, habitually giving input a name -->
       <p>Email:
       <input type="email" name="email"></p>
+      <!-- specifies the input type to be specifically email
+      for later php use, habitually giving input a name       -->
       <p>Phone Number:
       <input type="number" name="number"></p>
+      <!-- specifies the input type to be specifically numerical
+      for later php use, habitually giving input a name -->
       <p>Gender:
       <input type="radio" name="gender" value="female"> Female
       <input type="radio" name="gender" value="male"> Male</p>
+      <!-- specifies the input type to be specifically radio buttons
+      for later php use, habitually giving input a name
+      value specifies initial value for the input-->
       <p>Password:
       <input type="password" name="password"></p>
+      <!-- specifies the input type to be specifically password
+      for later php use, habitually giving input a name -->
 
 
     <h3>Survey Questions</h3>
@@ -32,6 +44,7 @@
 
         <p>How many times do you visit coffee shops per week?
          <select>
+            <!-- creating dropdown selection with 4 options -->
            <option value="0">0</option>
            <option value="1">1-3</option>
            <option value="3">3-5</option>
@@ -40,9 +53,11 @@
 
          <p>What is your favourite coffee shop? Please provide city of shop too.
            <input type="text" name="shop"></p>
-
+           <!-- specifies the input type to be specifically text
+           for later php use, habitually giving input a name -->
           <p>What do you typically order to drink?
             <select>
+                <!-- creating dropdown selection with 7 options -->
               <option value="cap">Cappuccino</option>
               <option value="choc">Hot Chocolate</option>
               <option value="tea">Tea</option>
@@ -55,15 +70,27 @@
           <p>Do you prefer large, national chain coffee shops or small, privately owned coffee shops?
             <input type="radio" name="large"> Smaller, private
             <input type="radio" name="large"> Larger, national</p>
+            <!-- specifies the input type to be specifically radio buttons
+            for later php use, habitually giving input a name -->
 
           <p>Comments:<br>
           <textarea name="msg" rows="8" cols="40"></textarea></p>
+          <!-- specifies the input type to be specifically a field for typing in any text
+          for later php use, habitually giving input a name
+          setting field size with rows and cols -->
 
           <p><input type="checkbox" name="news" value="news"> Sign me up for exciting news in the coffee world!</p>
-
+          <!-- specifies the input type to be specifically checkbox
+          for later php use, habitually giving input a name -->
           <p><input type="submit" name="submit" value="submit"></p>
+          <!-- specifies the input type to be specifically submitting
+          for later php use, habitually giving input a name
+          this is a submit button to submit all data entered in form -->
 
           <p><input type="reset" name="reset" value="reset"></p>
+          <!-- specifies the input type to be specifically resetting the form
+          for later php use, habitually giving input a name
+          this is a reset button which resets all the form's fields to empty -->
     </form>
 
   </body>
