@@ -33,6 +33,9 @@ Tools:
 - Commented Code
 - Double Checked For Structure
 
+2018-11-30:
+- Finished Task As Well As Possible
+
 ## Contributors
 
 Elizabeth Pollard - 2018
