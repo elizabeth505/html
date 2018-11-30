@@ -30,6 +30,7 @@ Tools:
 - Files Added From Old Repo
 - Commented Code
 - Double Checked For Structure
+- Fixed Name Input
 
 ## Contributors
 
